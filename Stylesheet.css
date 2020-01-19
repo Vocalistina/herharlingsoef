@@ -1,0 +1,124 @@
+* {
+    font-family: "Roboto Light";
+    background: #ededed;
+    box-sizing: border-box;
+}
+body {
+    position: absolute;
+}
+.navigatiemenu {
+    list-style-type: none;
+    background: rgba(87, 222, 135, 0.7);
+    max-height: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+    horiz-align: center;
+    padding: 0;
+    position: fixed;
+    text-transform: uppercase;
+    z-index: 50;
+    width: 98%;
+    clear: both;
+    overflow: hidden;
+}
+
+.navigatiemenu li {
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: center;
+    line-height: 30px;
+    color: #093156;
+    font-weight: bold;
+}
+#logo {
+    max-height: 50px;
+    position: relative;
+    top: 13px;
+}
+#banner {
+    padding-top: 10px;
+    position: relative;
+    top: 100px;
+    width: 98%;
+    z-index: 45;
+    horiz-align: center;
+}
+#tekstOverBanner {
+    position: absolute;
+    horiz-align: right;
+    top: 150px;
+    z-index: 48;
+    text-transform: uppercase;
+    font-size: x-large;
+    color: grey;
+
+}
+section:nth-child(1) {
+    position: relative;
+    top: 10px;
+
+ }
+section:nth-child(2) {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+#hoofding {
+    font-weight: 400;
+   }
+p:nth-child(3) {
+    font-size: small;
+}
+article {
+    width: 300px;
+    float: left;
+    padding-right: 20px;
+}
+article:nth-child(-1) {
+
+}/*
+@media screen and (min-width: 1000px) {
+    *{
+        width: 1050px;
+    }
+    .navigatiemenu {
+        line-height: 55px;
+        width: 98%;
+        horiz-align: center;
+        padding: 0;
+        position: fixed;
+        text-transform: uppercase;
+        z-index: 50;
+        clear: both;
+        overflow: hidden;
+        list-style-type: none;
+        background: rgba(87, 222, 135, 0.7);
+        max-height: border-box;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .navigatiemenu li {
+        display: inline-block;
+        padding-left: 20px;
+        vertical-align: center;
+        line-height: 30px;
+        color: #093156;
+        font-weight: bold;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    article p:nth-child(3) {
+        height: 100px;
+        width: border-box;
+    }
+}
+@media screen  and (min-width: 700px) and (max-width: 1000px) {
+    *{
+        width: 700px;
+    }
+    #banner {
+        width: 100%;
+    }
+}*/
