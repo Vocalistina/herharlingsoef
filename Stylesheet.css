@@ -1,25 +1,19 @@
 * {
     font-family: "Roboto Light";
-    background: #ededed;
+    background-color: #ededed;
     box-sizing: border-box;
 }
-body {
-    position: absolute;
-}
+
 .navigatiemenu {
     list-style-type: none;
     background: rgba(87, 222, 135, 0.7);
-    max-height: border-box;
     margin-left: 0px;
     margin-right: 0px;
-    horiz-align: center;
     padding: 0;
     position: fixed;
     text-transform: uppercase;
     z-index: 50;
     width: 98%;
-    clear: both;
-    overflow: hidden;
 }
 
 .navigatiemenu li {
@@ -29,6 +23,7 @@ body {
     line-height: 30px;
     color: #093156;
     font-weight: bold;
+    background: none;
 }
 #logo {
     max-height: 50px;
@@ -37,20 +32,19 @@ body {
 }
 #banner {
     padding-top: 10px;
-    position: relative;
-    top: 100px;
+    margin-top: 100px;
     width: 98%;
     z-index: 45;
-    horiz-align: center;
 }
 #tekstOverBanner {
     position: absolute;
-    horiz-align: right;
-    top: 150px;
+    right: 25px;
+    top: 200px;
     z-index: 48;
     text-transform: uppercase;
-    font-size: x-large;
-    color: grey;
+    color: rgba(255, 255, 255, 0.8);
+    background: none;
+    font-size: xx-large;
 
 }
 section:nth-child(1) {
@@ -65,7 +59,11 @@ section:nth-child(2) {
 }
 #hoofding {
     font-weight: 400;
+    text-decoration: underline;
    }
+p:nth-child(1){
+
+}
 p:nth-child(3) {
     font-size: small;
 }
@@ -121,4 +119,18 @@ article:nth-child(-1) {
     #banner {
         width: 100%;
     }
-}*/
+}
+@media screen and (max-width: 700px) {
+    * {
+        width: 95%;
+    }
+    .navigatiemenu {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #tekstOverBanner {
+        make it hidden
+    }
+
+*/
