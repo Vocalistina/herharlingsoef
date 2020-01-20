@@ -1,62 +1,46 @@
-* {
+body {
     font-family: "Roboto Light";
-    background-color: #ededed;
-    box-sizing: border-box;
+    background: #ededed;
+    width: 1050px;
 }
 
 .navigatiemenu {
     list-style-type: none;
     background: rgba(87, 222, 135, 0.7);
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0;
     position: fixed;
     text-transform: uppercase;
     z-index: 50;
-    width: 98%;
+    width: 100%;
 }
 
-.navigatiemenu li {
+.navigatiemenu a {
     display: inline-block;
     padding-left: 20px;
-    vertical-align: center;
     line-height: 30px;
     color: #093156;
     font-weight: bold;
-    background: none;
 }
 #logo {
-    max-height: 50px;
+    max-width: 50px;
+    height: auto;
     position: relative;
     top: 13px;
 }
 #banner {
     padding-top: 10px;
     margin-top: 100px;
-    width: 98%;
+    width: 100%;
     z-index: 45;
 }
 #tekstOverBanner {
-    position: absolute;
-    right: 25px;
-    top: 200px;
+    float: right;
+    padding-right: 20px;
     z-index: 48;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.8);
-    background: none;
-    font-size: xx-large;
-
+    font-size: 30px;
 }
-section:nth-child(1) {
-    position: relative;
-    top: 10px;
 
- }
-section:nth-child(2) {
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
 #hoofding {
     font-weight: 400;
     text-decoration: underline;
@@ -68,15 +52,20 @@ p:nth-child(3) {
     font-size: small;
 }
 article {
-    width: 300px;
+    width: 200px;
     float: left;
+    padding-left: 20px;
     padding-right: 20px;
+    overflow: hidden;
+}
+article img {
+    width: auto;
 }
 article:nth-child(-1) {
 
-}/*
+}
 @media screen and (min-width: 1000px) {
-    *{
+    body {
         width: 1050px;
     }
     .navigatiemenu {
@@ -124,13 +113,14 @@ article:nth-child(-1) {
     * {
         width: 95%;
     }
+
     .navigatiemenu {
         width: 100%;
         padding: 0;
         margin: 0;
     }
-    #tekstOverBanner {
-        make it hidden
-    }
 
-*/
+    #tekstOverBanner {
+
+    }
+}
