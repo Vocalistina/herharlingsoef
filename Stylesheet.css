@@ -1,126 +1,196 @@
 body {
-    font-family: "Roboto Light";
+    font-family: 'Roboto', serif;
     background: #ededed;
     width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
 }
 
-.navigatiemenu {
-    list-style-type: none;
+nav {
     background: rgba(87, 222, 135, 0.7);
     position: fixed;
-    text-transform: uppercase;
+    height: 55px;
+    width: 100%;
+    max-width: 1050px;
+    top: 0;
     z-index: 50;
-    width: 100%;
-}
-
-.navigatiemenu a {
-    display: inline-block;
-    padding-left: 20px;
-    line-height: 30px;
-    color: #093156;
-    font-weight: bold;
-}
-#logo {
-    max-width: 50px;
-    height: auto;
-    position: relative;
-    top: 13px;
-}
-#banner {
-    padding-top: 10px;
-    margin-top: 100px;
-    width: 100%;
-    z-index: 45;
-}
-#tekstOverBanner {
-    float: right;
-    padding-right: 20px;
-    z-index: 48;
+    overflow: hidden;
+    box-sizing: border-box;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 30px;
 }
 
-#hoofding {
-    font-weight: 400;
-    text-decoration: underline;
-   }
-p:nth-child(1){
-
-}
-p:nth-child(3) {
-    font-size: small;
-}
-article {
-    width: 200px;
+nav a {
     float: left;
     padding-left: 20px;
-    padding-right: 20px;
-    overflow: hidden;
+    color: #093156;
+    text-align: center;
+    font-weight: 400;
+    font-size: small;
 }
+nav a:any-link,
+nav a:visited{
+    text-decoration: none;
+}
+
+
+hr {
+    padding-top: 0;
+    margin-top: 0;
+}
+section article p:nth-child(1) {
+    display: inline-block;
+    box-sizing: border-box;
+}
+section article p:nth-child(2) {
+    display: inline-block;
+    float: right;
+}
+
+article {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    box-sizing: border-box;
+}
+
+
+
 article img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+article:hover img {
+    opacity: 70%;
+}
+
+article h6 {
+    background: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-indent: 5px;
+}
+
+section article:first-of-type,
+section article:nth-of-type(5){
+    padding-right: 1%;
+    padding-left: 0;
+}
+section article:nth-of-type(2),
+section article:nth-of-type(3),
+section article:nth-of-type(6),
+section article:nth-of-type(7) {
+    padding-right: 1%;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+
+.hoofding {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.tekst-small {
+    font-size: small;
+    height: 100px;
+}
+
+
+
+
+/*
+.image-right {
+    padding-right: 0;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+.image-mid {
+    padding-left: 1%;
+    padding-right: 1%;
+    box-sizing: border-box;
+}*/
+
+#logo {
+    height: 55px;
     width: auto;
 }
-article:nth-child(-1) {
+#banner {
+    z-index: 45;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+}
+#tekstOverBanner {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.7);
+    top: 200px;
+    left: 60%;
+    z-index: 48;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
 
+:last-child(of article.p) {
+    font-size: small;
 }
-@media screen and (min-width: 1000px) {
-    body {
-        width: 1050px;
-    }
-    .navigatiemenu {
-        line-height: 55px;
-        width: 98%;
-        horiz-align: center;
-        padding: 0;
-        position: fixed;
-        text-transform: uppercase;
-        z-index: 50;
-        clear: both;
-        overflow: hidden;
-        list-style-type: none;
-        background: rgba(87, 222, 135, 0.7);
-        max-height: border-box;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .navigatiemenu li {
-        display: inline-block;
-        padding-left: 20px;
-        vertical-align: center;
-        line-height: 30px;
-        color: #093156;
-        font-weight: bold;
-    }
-    img {
-        width: 100%;
-        height: auto;
-    }
-    article p:nth-child(3) {
-        height: 100px;
-        width: border-box;
-    }
+
+
+#more-button {
+    clear: both;
+    background: #000000;
+    color: white;
+    width: 150px;
+    margin: auto;
+    line-height: 20px;
+    padding-left: 5px;
 }
+
+#footer {
+    clear: both;
+    line-height: 100px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
 @media screen  and (min-width: 700px) and (max-width: 1000px) {
-    *{
+    body {
         width: 700px;
+    }
+    article {
+        width: 50%;
+        box-sizing: border-box;
     }
     #banner {
         width: 100%;
+        max-width: 700px;
     }
+    nav {
+        width: 100%;
+        max-width: 700px;
+    }
+
 }
 @media screen and (max-width: 700px) {
-    * {
+    body {
         width: 95%;
     }
-
-    .navigatiemenu {
+    article {
         width: 100%;
-        padding: 0;
-        margin: 0;
     }
-
     #tekstOverBanner {
+        display: none;
+    }
+    nav {
+        width: 100%;
+    }
 
     }
-}
+
+
