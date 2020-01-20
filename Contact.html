@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="Stylesheet.css"/>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="Home.html"><img id="logo"  src="./Images/logo.png" alt="logo blad"></a>
+            <a href="Home.html"><h1>NIEUWS</h1></a>
+            <a href="Producten.html"><h1>PRODUCTEN</h1></a>
+            <a href="Contact.html"><h1>CONTACT</h1></a>
+        </nav>
+    </header>
+    <div>
+        <img id="banner" src="Images/banner.jpg" alt="2 groene blaadjes met takje en
+                                                            groene achtergrond">
+        <h2 id="tekstOverBanner">De tuin van Sam</h2>
+    </div>
+    <div class="contact-title">
+        <img src="Images\contact.png" alt="envelopje zwarte lijnen witte achtergrond">
+        <h1 class="hoofding">Contact</h1>
+        <hr>
+    </div>
+    <section>
+        <p class="tekst-small">Wij horen graag van onze fans. Laat van je horen:</p>
+    </section>
+    <section>
+        <form action="mailto:sam.agten@pxl.be" method="post" enctype="text/plain">
+            <input type="text" name="Naam" title="Naam" placeholder="Naam" required />
+            <input type="email" name="E-mail" placeholder="E-mail" required />
+            <input type="text" name="Onderwerp" placeholder="Onderwerp" required />
+            <input type="text" name="Boodschap" placeholder="Boodschap" required/>
+            <input type="submit" name="Stuur Boodschap" value="Stuur boodschap" required />
+        </form>
+     </section>
+
 
 </body>
 </html>

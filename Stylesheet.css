@@ -48,11 +48,9 @@ section article p:nth-child(2) {
 }
 
 article {
-    width: 25%;
-    margin: 0;
-    padding: 0;
     float: left;
     box-sizing: border-box;
+    width: 25%;
 }
 
 
@@ -84,9 +82,14 @@ section article:nth-of-type(2),
 section article:nth-of-type(3),
 section article:nth-of-type(6),
 section article:nth-of-type(7) {
-    padding-right: 1%;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+
+}
+section article:nth-of-type(4),
+section article:last-of-type {
+    padding-right: 0;
     padding-left: 1%;
-    box-sizing: border-box;
 }
 
 .hoofding {
@@ -99,21 +102,68 @@ section article:nth-of-type(7) {
     font-size: small;
     height: 100px;
 }
-
-
-
-
-/*
-.image-right {
-    padding-right: 0;
-    padding-left: 1%;
-    box-sizing: border-box;
+.contact-title img{
+    display: inline-block;
+    height: 25px;
+    width: auto;
 }
-.image-mid {
-    padding-left: 1%;
-    padding-right: 1%;
+.contact-title h1 {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    text-indent: 10px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+article p:first-of-type,
+article p:nth-of-type(2) {
+    font-size: small;
+}
+form {
+    width: 100%;
+    white-space: nowrap;
+}
+form input  {
+    background: #85d38e;
+    border: none;
     box-sizing: border-box;
-}*/
+    color: white;
+    width: 33%;
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-indent: 5px;
+}
+
+::placeholder {
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+input:nth-of-type(4) {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 100px;
+    color: white;
+    padding: 1%;
+    margin-top: 5px;
+}
+
+input[type=submit]{
+    background: #326544;
+    display: block;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 1%;
+    margin-top: 5px;
+}
+
+
 
 #logo {
     height: 55px;
@@ -167,6 +217,14 @@ section article:nth-of-type(7) {
         width: 50%;
         box-sizing: border-box;
     }
+    section article:nth-of-type(odd) {
+        padding-right: 1%;
+        padding-left: 0;
+    }
+    section article:nth-of-type(even) {
+        padding-right: 0;
+        padding-left: 1%;
+    }
     #banner {
         width: 100%;
         max-width: 700px;
@@ -183,6 +241,7 @@ section article:nth-of-type(7) {
     }
     article {
         width: 100%;
+        padding: 0;
     }
     #tekstOverBanner {
         display: none;
