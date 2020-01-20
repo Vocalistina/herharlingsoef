@@ -201,21 +201,29 @@ tfoot td {
     height: 55px;
     width: auto;
 }
+.banner {
+    width: 100%;
+    max-width: 1050px;
+    box-sizing: border-box;
+}
 #banner {
     z-index: 45;
-    position: relative;
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: 1050px;
+    width: 100%;
     height: auto;
 }
 #tekstOverBanner {
     position: absolute;
-    color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    max-width: 1050px;
     top: 200px;
-    left: 60%;
+    left: auto;
+    color: rgba(255, 255, 255, 0.7);
     z-index: 48;
-    font-size: 2vw;
+    font-size: 40px;
     text-transform: uppercase;
+    text-align: right;
 }
 
 #more-button {
@@ -257,9 +265,11 @@ tfoot td {
         padding-right: 0;
         padding-left: 1%;
     }
-    #banner {
+    #banner,
+    #tekstOverBanner {
         width: 100%;
         max-width: 700px;
+        top: 150px;
     }
     nav {
         width: 100%;
