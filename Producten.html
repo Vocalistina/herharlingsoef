@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="Stylesheet.css"/>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Producten</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="Home.html"><img id="logo"  src="./Images/logo.png" alt="logo blad"></a>
+            <a href="Home.html"><h1>NIEUWS</h1></a>
+            <a href="Producten.html"><h1>PRODUCTEN</h1></a>
+            <a href="Contact.html"><h1>CONTACT</h1></a>
+        </nav>
+    </header>
+    <div>
+        <img id="banner" src="Images/banner.jpg" alt="2 groene blaadjes met takje en groene achtergrond">
+        <h2 id="tekstOverBanner">De tuin van Sam</h2>
+    </div>
+    <div class="contact-title">
+        <img src="Images\shopping.png" alt="envelopje zwarte lijnen witte achtergrond">
+        <h1 class="hoofding">Contact</h1>
+        <hr>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th class="not-bold" colspan="5">Producten</th>
+            </tr>
+            <tr>
+                <th colspan="1"></th>
+                <th colspan="2">Voorjaar</th>
+                <th class="color-midgreen" colspan="2">Najaar</th>
+            </tr>
+            <tr>
+                <th>Naam</th>
+                <th class="not-bold">Prijs voor 1</th>
+                <th class="not-bold">Prijs voor 10</th>
+                <th class="not-bold" class="color-midgreen">Prijs voor 1</th>
+                <th class="not-bold" class="color-midgreen">Prijs voor 10</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vogelbadje</td>
+                <td>6.49</td>
+                <td>59.99</td>
+                <td class="color-lightgreen">5.49</td>
+                <td class="color-lightgreen">49.99</td>
+            </tr>
+            <tr>
+                <td>Faco 2 Snoeischaar</td>
+                <td>39.95</td>
+                <td>299.95</td>
+                <td class="color-lightgreen">39.95</td>
+                <td class="color-lightgreen">209.95</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td colspan="5">Alle items zijn onderhevig aan onze verkoopsvoorwaarden</td>
+            </tr>
+        </tfoot>
 
+    </table>
+
+    </tbody>
+    <div id="spacing-before-footer"></div>
+    <footer id="footer">Copyright PXL 2018
+    </footer>
 </body>
 </html>

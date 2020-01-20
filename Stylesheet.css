@@ -115,6 +115,20 @@ section article:last-of-type {
     font-weight: 400;
     font-size: 24px;
 }
+.not-bold{
+    font-weight: normal;
+}
+.color-midgreen {
+    background: #368050;
+}
+.color-lightgreen {
+    background: #b5d8b9;
+}
+
+:last-child(of article.p) {
+    font-size: small;
+}
+
 
 article p:first-of-type,
 article p:nth-of-type(2) {
@@ -163,7 +177,27 @@ input[type=submit]{
     margin-top: 5px;
 }
 
+table {
+    width: 100%;
+    color: white;
 
+}
+th {
+    background: #326544;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+td {
+    background: #85d38e;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+tfoot td {
+    background: #326544;
+}
 
 #logo {
     height: 55px;
@@ -186,11 +220,6 @@ input[type=submit]{
     text-transform: uppercase;
 }
 
-:last-child(of article.p) {
-    font-size: small;
-}
-
-
 #more-button {
     clear: both;
     background: #000000;
@@ -199,6 +228,11 @@ input[type=submit]{
     margin: auto;
     line-height: 20px;
     padding-left: 5px;
+}
+#spacing-before-footer {
+    display: block;
+    height: 100px;
+    width: auto;
 }
 
 #footer {
